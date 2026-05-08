@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Mother's Day ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffe6f0,#fff5f8);
+    overflow-x:hidden;
+    color:#333;
+}
+
+/* Floating Hearts */
+
+.hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.heart{
+    position:absolute;
+    bottom:-50px;
+    color:rgba(255,105,180,0.4);
+    animation:float 10s linear infinite;
+    font-size:22px;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+
+    10%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#ff4081;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:1.2rem;
+    max-width:700px;
+    line-height:1.8;
+}
+
+/* Button */
+
+.btn{
+    margin-top:35px;
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    background:#ff4081;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#ff1f6d;
+    transform:translateY(-3px);
+}
+
+/* Gallery */
+
+.gallery{
+    padding:60px 20px;
+}
+
+.gallery h2{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:40px;
+    color:#ff4081;
+}
+
+.photos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.card p{
+    padding:15px;
+    text-align:center;
+    font-weight:600;
+}
+
+/* Message */
+
+.message{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.message h2{
+    font-size:3rem;
+    color:#ff4081;
+    margin-bottom:20px;
+}
+
+.message p{
+    max-width:800px;
+    margin:auto;
+    font-size:1.2rem;
+    line-height:2;
+}
+
+/* Footer */
+
+.footer{
+    text-align:center;
+    padding:30px;
+    background:#ff4081;
+    color:white;
+    margin-top:50px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.8rem;
+}
+
+.message h2{
+    font-size:2rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+
+<div class="hearts">
+
+    <div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+    <div class="heart" style="left:20%; animation-delay:2s;">💖</div>
+    <div class="heart" style="left:35%; animation-delay:4s;">💕</div>
+    <div class="heart" style="left:50%; animation-delay:1s;">❤️</div>
+    <div class="heart" style="left:65%; animation-delay:5s;">💗</div>
+    <div class="heart" style="left:80%; animation-delay:3s;">💞</div>
+
+</div>
+
+<!-- Hero -->
+
+<section class="hero">
+
+    <h1>Happy Mother's Day ❤️</h1>
+
+    <p>
+        Thank you for every hug, every smile, every sacrifice,
+        and every moment you stood beside me.
+        You are my biggest inspiration and my forever hero.
+    </p>
+
+    <button class="btn" onclick="showMessage()">
+        Click for a Surprise ✨
+    </button>
+
+</section>
+
+<!-- Gallery -->
+
+<section class="gallery">
+
+    <h2>Our Beautiful Memories 📸</h2>
+
+    <div class="photos">
+
+        <div class="card">
+            <img src="https://i.ibb.co/prnFfD8n/mom1.jpg" alt="Mom Photo">
+            <p>Best Mom Ever ❤️</p>
+        </div>
+
+        <div class="card">
+           <img src="https://i.ibb.co/Wp09S0Ky/mom2.jpg" alt="Mom Photo 2">
+            <p>Our favorite memory together ✨</p>
+        </div>
+
+        <div class="card">
+            <img src="https://i.ibb.co/3YQ82DZH/mom3.jpg" alt="Mom Photo 3">
+            <p>Family moments are priceless 💕</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Message -->
+
+<section class="message">
+
+    <h2>To The Best Mom In The World 🌸</h2>
+
+    <p>
+        No matter how much I grow,
+        I will always need your love,
+        your advice, and your smile.
+
+        Thank you for making life beautiful
+        and filling every day with warmth and happiness.
+
+        I love you more than words can ever express ❤️
+    </p>
+
+</section>
+
+<!-- Footer -->
+
+<div class="footer">
+    Made with ❤️ by Your Loving Children Dhyanesh & Karnesh
+</div>
+
+<script>
+
+function showMessage(){
+
+    alert("நீங்கள்தான் மிகச்சிறந்த அம்மா ❤️ எல்லாவற்றிற்கும் நன்றி! தாரணி அம்மா");
+
+}
+
+</script>
+
+</body>
+</html>
